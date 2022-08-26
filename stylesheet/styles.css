@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.container{
+  width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 2rem auto;
+  margin-top: 4rem;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.container-box{ 
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+  border: 0.1rem solid rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 2rem;
+  height: 40vh;
+  align-items: center;
+}
+
+.container-box.profile{
+  flex: 1 1 20%;
+  text-align: center;
+
+}
+
+.container-box.preferences{
+  flex: 1 1 60%;
+  min-width: 30ch;
+
+  text-align: left;
+}
+
+
+img.profile-pic{
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.text-profile{
+  padding: 1rem;
+  text-align: center;
+}
+
+.container-box.preferences h3{
+  padding: 0.5rem 0;
+  padding-bottom: 2rem;
+}
+
+.text-preferences{
+  padding-right: 1rem;
+
+}
+
+.input-box{
+  border: 0.1rem solid rgba(0,0,0,0.2);
+  background: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  padding: 0 1rem;
+}
+
+
+.accordion {
+  width: 80%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.accordion-item-body-content.buttons{
+  display: block;
+}
+
+
+
+.btn{
+  width: 15rem;
+  height: 2.5rem;
+  border: 0.1rem solid rgba(0,0,0,0.2);
+  background: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.btn i{
+  color: #4267B2;
+  width: 2rem;
+
+  padding: 0.3rem;
+}
+
+.btn.button-1{
+  background: #4267B2;
+}
+
+.btn.button-1 i{
+  color: #fff;
+}
+
+.btn.button-3.text-media p{
+  padding: 1rem;
+}
+
+.text-media p,
+.text-media span{
+  text-transform: none;
+}
+
+.text-media span{
+  color: #D3D3D3;
+  font-size: small;
+}
+
+.btn.button-3 i,
+.btn.button-4 i{
+  border: 0.1rem solid rgba(0,0,0,0.2);
+  background: #fff;
+  border-radius: 40%;
+  padding: 0.1rem;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.25);
+}
+
+.fa-solid.fa-trash-can.fa-2x{
+  color: red;
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
